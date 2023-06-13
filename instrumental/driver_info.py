@@ -1,4 +1,4 @@
-# Auto-generated 2023-05-15T12:56:15.046873
+# Auto-generated 2023-06-13T16:25:43.483910
 from collections import OrderedDict
 
 driver_info = OrderedDict([
@@ -186,6 +186,12 @@ driver_info = OrderedDict([
         'params': ['model', 'serial', 'usb'],
         'classes': ['CCS'],
         'imports': ['cffi', 'nicelib', 'visa'],
+    }),
+    ('spectrumanalyzers.hp', {
+        'params': ['visa_address'],
+        'classes': ['HP856x'],
+        'imports': [],
+        'visa_info': {},
     }),
     ('spectrumanalyzers.rohde_schwarz', {
         'params': ['visa_address'],
