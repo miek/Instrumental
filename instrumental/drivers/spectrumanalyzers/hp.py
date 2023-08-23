@@ -8,7 +8,10 @@ from .. import VisaMixin, SCPI_Facet
 import numpy as np
 
 def _check_visa_support(visa_rsrc):
-    model = visa_rsrc.query('ID?')
+    try:
+        model = visa_rsrc.query('ID?')
+    except:
+        return None
     supported_models = [
             'HP8561E', 'HP8561EC',
             'HP8562E', 'HP8562EC',

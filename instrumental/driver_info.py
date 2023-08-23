@@ -1,4 +1,4 @@
-# Auto-generated 2023-06-13T16:25:43.483910
+# Auto-generated 2023-08-01T22:35:02.223255
 from collections import OrderedDict
 
 driver_info = OrderedDict([
@@ -190,6 +190,12 @@ driver_info = OrderedDict([
     ('spectrumanalyzers.hp', {
         'params': ['visa_address'],
         'classes': ['HP856x'],
+        'imports': [],
+        'visa_info': {},
+    }),
+    ('spectrumanalyzers.keysight_bsa', {
+        'params': ['visa_address'],
+        'classes': ['N932xC'],
         'imports': [],
         'visa_info': {},
     }),
